@@ -1,0 +1,20 @@
+- enable Cloud SQL Admin API, Cloud SQL API
+- create a Cloud SQL instance
+- create a Bucket in Google Storage
+- open Cloud Shell
+	- clone project from github
+	- use gsutil to copy sql and csv file to bucket GS
+- in UI of Cloud SQL
+	- create a database
+	- use "import data from Google Storage"
+		- create table via sql file in bucket GS
+			- make sure to chose the DB appropriate
+		- add data in csv file in bucket GS
+			- make sure to chose the DB appropriate
+			- make sure to write correctly the name of the table created
+- back to Cloud Shell
+	- use "gcloud sql" to connect to Cloud SQL instance
+	- go to DB appropriate
+	- run some queries to check
+ 
+

@@ -1,0 +1,17 @@
+- enable Cloud SQL Admin API, Cloud SQL API
+- create a service_account for Cloud SQL
+- create a Cloud SQL instance
+- create a VM Compute Engine instance
+	- upload sql file, sercive_account to VM
+	- use SSH to access this instance
+	- install default-mysql-client and the missing packages if needed
+	- download cloud_sql_proxy with wget
+	- use (use chmod before) cloud_sql_proxy to open a connection to Cloud SQL instance
+		- use connection_name of Cloud SQL instance, tcp, credential_file 
+	- use 'mysql cmd' to connect 
+		- create a database
+		- then exit
+	- use 'mysql cmd' to create tables via sql file for the database created
+	- check by executing some queries
+ 
+
