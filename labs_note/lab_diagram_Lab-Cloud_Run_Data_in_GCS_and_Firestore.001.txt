@@ -1,0 +1,32 @@
+- enable Cloud Run API and Cloud Build API
+- open Cloud Shell
+	- clone project from github
+	- 3 code folders for 3 challenges
+- challenge 1
+	- use gcloud cmd to build image
+	- use gcloud cmd to deploy image to Cloud Run
+	- from UI, access Cloud Run 
+		- access instances -> get URL of app
+- challenge 2
+	- create a Bucket in GS
+	- save bucket name
+	- open project in folder_2
+		- change name bucket_name var
+	- use gcloud cmd to build image
+	- use gcloud cmd to deploy image to Cloud Run
+	- from UI, access Cloud Run 
+		- access instances -> get URL of app
+		- try to upload an image
+		- check in Bucket to make sure image is saved
+- challenge 3
+	- create a instance of Firestore with Native Mode
+	- open project in folder_3
+		- change name bucket_name var
+	- use gcloud cmd to build image
+	- use gcloud cmd to deploy image to Cloud Run
+	- from UI, access Cloud Run 
+		- access instances -> get URL of app
+		- type a description 
+		- try to upload an image
+		- check in Bucket to make sure image is saved
+		- check in Firestore Native Mode to make sure we have data in
