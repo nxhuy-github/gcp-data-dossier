@@ -1,0 +1,22 @@
+- enable Cloud Memory Redis API
+- create a Cloud Memory Redis instance
+- create a Compute Engine - VM instance
+	- add a network tag: xxx
+		- with Firewall rules, we can access the application
+- create a Firewall rule - VPC network: by default, incoming traffic from outside your network is blocked
+	- use the value tag created in VM instance
+	- specify IP ranges: (for ex) 0.0.0.0/0
+	- specify protocol (tcp, udp, etc) and port
+- access VM instance via SSH
+	- update packages, clone git
+	- change DB_host (in settings.py) by IP of Redis instance
+	- change app.run(host='0.0.0.0') (in runserver.py)
+	- run cmd: python runserver.py to run the app
+	- use IP of VM instance with port (in firewall run) to access the app in browser
+- create a Google Storage bucket
+- back to SSH shell of VN instance
+	- install package: redis-tools
+	- use cmd: redis-cli -h xxx (with xxx is the IP adress of Redis instance) to access to Redis instance
+		- test cmd like INFO, INFO keyspace, etc
+ 
+
